@@ -43,7 +43,7 @@ export default class LinkedUp extends Component {
 
           <Link to="/Write">Write</Link>
 
-          <Link to="/Code">Code</Link>
+          <Link to="/Projects">Projects</Link>
         </LinkContainer>
       </LinkMe>
     );

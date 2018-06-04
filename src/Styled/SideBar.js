@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React, { Component } from "react";
+import ContactInfo from "../Styled/Contacts.js";
 
 const BasicSide = styled.div`
   width: 25vw;
@@ -14,7 +15,8 @@ const BasicSide = styled.div`
 const BasicSideContainer = styled.div`
   height: 70%;
   width: 100%;
-  ${"" /* background: salmon; */} padding: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
 `;
 
 // BAR CONTENT YA DIG
@@ -44,6 +46,7 @@ export class HomeSide extends Component {
           <Hidden>yoo-hoo</Hidden>
           <WhereRU>and this is my website.</WhereRU>
           <Hidden>please enjoy your stay.</Hidden>
+          <ContactInfo />
         </BasicSideContainer>
       </BasicSide>
     );
@@ -61,6 +64,7 @@ export class AboutSide extends Component {
             i'm made up of 90% hard work & 10% spongebob quotes.
           </WhereRU>
           <Hidden>please enjoy your stay.</Hidden>
+          <ContactInfo />
         </BasicSideContainer>
       </BasicSide>
     );
@@ -76,6 +80,7 @@ export class WriteSide extends Component {
           <Hidden>mmmhmm</Hidden>
           <WhereRU>& sometimes i write.</WhereRU>
           <Hidden>please enjoy your stay.</Hidden>
+          <ContactInfo />
         </BasicSideContainer>
       </BasicSide>
     );
@@ -91,6 +96,7 @@ export class CodeSide extends Component {
           <Hidden>mmmhmm</Hidden>
           <WhereRU> and this is a bit of my work.</WhereRU>
           <Hidden>please enjoy your stay.</Hidden>
+          <ContactInfo />
         </BasicSideContainer>
       </BasicSide>
     );

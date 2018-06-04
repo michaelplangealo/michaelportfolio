@@ -9,9 +9,8 @@ export const AboutPage = styled.body`
   background: aliceblue;
 `;
 export const PageContent = styled.div`
-  height: 110%;
+  height: 95%;
   width: 90%;
-  margin-top: 20vh;
   background: white;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -29,7 +28,7 @@ const ContentContent = styled.div`
   justify-content: space-around;
 `;
 
-const AboutIntro = styled.h1`
+export const Intro = styled.h1`
   letter-spacing: 0.2px;
   text-rendering: optimizeLegibility;
   line-height: 36px;
@@ -138,34 +137,33 @@ export default class About extends Component {
         <BodyParty>
           <PageContent>
             <ContentContent>
-              <AboutIntro>
+              <Intro>
                 Hi there. I'm Michael Plange, a Front-End Web Developer based
                 out of Dallas, Texas. <Peekaboo>yeehaw</Peekaboo>
-              </AboutIntro>
+              </Intro>
               <AboutContent>
                 I graduated from the University of Texas at Arlington in 2014
-                with a Bachelor of Science in Psychology. I did research there
-                as well, over a large array of topics, mostly in emotions and
-                behavior as well as the effects of pharmaceutical medicine. Lab
-                rats and unwilling research participants were my best friends,
-                but in the meantime I fostered my love for anything and
-                everything creative. While I was wrapping up my undergrad, I had
-                the choice of pursuing either my Masters or PhD, or applying for
-                Pharamcy School. It was then I realized that I probably
-                shouldn't do either of those things (the last thing the world
-                needs is a bad therapist or a bad pharamcist) and decided to
-                turn my attention elsewhere. I felt that the best field for me
-                to work in would be a field in which I could explore creative
-                possibilities while solving a problem, imbued with my own
-                personality. After a bit of much needed soul-searching, I found
-                myself in the field of Web Development, scratching my itch of
-                being both creative and practical.
+                with a Bachelor of Science in Psychology. I participated in the
+                research department during my time there, studying emotions and
+                behavior as well as pharmaceutical medicine and it's effect on
+                the brain. Lab rats and unwilling research participants were my
+                best friends, but in the meantime I fostered my love for
+                anything and everything creative. While I was wrapping up my
+                undergrad, I had the choice of pursuing either my Masters or
+                PhD, or applying for Pharamcy School. It was then I realized
+                that I probably shouldn't do either of those things (the last
+                thing the world needs is a bad therapist or a bad pharamcist)
+                and decided to turn my attention elsewhere. I felt that the best
+                field for me to work in would be a field in which I could
+                explore creative possibilities while solving a problem, imbued
+                with my own personality. After a bit of much needed
+                soul-searching, I found myself in the field of Web Development,
+                scratching my itch of being both creative and practical.
               </AboutContent>
               <NotCute>
                 Art and design, and some animating, these are a few of my
-                favorite things 🎤🎶<Peekaboo>
-                  Sung to the tune of "Favorite Things".
-                </Peekaboo>
+                favorite things <span role="img">🎤🎶</span>
+                <Peekaboo>Sung to the tune of "Favorite Things".</Peekaboo>
               </NotCute>
               <Interest>
                 <Topics>

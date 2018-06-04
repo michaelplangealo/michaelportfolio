@@ -13,9 +13,9 @@ const HomeHi = styled.h1`
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  background: lime;
   width: 80%;
-  height: 5vh;
+  height: 40%;
+  padding-bottom: 10vh;
 `;
 
 export default class Home extends Component {

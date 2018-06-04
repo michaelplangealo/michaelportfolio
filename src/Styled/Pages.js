@@ -7,28 +7,23 @@ export const PageBody = styled.body`
 `;
 export const BodyParty = styled.div`
   width: 115%;
-  height: 88%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  ${"" /* background: red; */};
 `;
 
 export const Content = styled.div`
-  height: 110%;
+  height: 95%;
   width: 90%;
-  margin-top: 20vh;
   background: white;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-`;
-
-export const AboutPage = styled.body`
-  display: flex;
-  height: 200vh;
-  background: aliceblue;
+  ${"" /* background: teal; */};
 `;
 
 // FbDXZ {
