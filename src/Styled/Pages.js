@@ -6,7 +6,7 @@ export const PageBody = styled.body`
   background: aliceblue;
 `;
 export const BodyParty = styled.div`
-  width: 100%;
+  width: 115%;
   height: 180vh;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@ export const BodyParty = styled.div`
 `;
 
 export const Content = styled.div`
-  height: 115%;
+  height: 110%;
   width: 90%;
   margin-top: 20vh;
   background: white;
