@@ -14,7 +14,8 @@ const BasicSide = styled.div`
 const BasicSideContainer = styled.div`
   height: 70%;
   width: 100%;
-  ${"" /* background: salmon; */} padding: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
 `;
 
 // BAR CONTENT YA DIG
@@ -34,6 +35,43 @@ const WhereRU = styled.h2`
   font-weight: 400;
   font-size: 16px;
 `;
+const ContactMe = styled.div`
+  height: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  a {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: tomato;
+    }
+  }
+  div {
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+  }
+  span {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+`;
 
 export class HomeSide extends Component {
   render() {
@@ -44,6 +82,26 @@ export class HomeSide extends Component {
           <Hidden>yoo-hoo</Hidden>
           <WhereRU>and this is my website.</WhereRU>
           <Hidden>please enjoy your stay.</Hidden>
+          <ContactMe>
+            <div>
+              <span class="fas fa-envelope-open" />
+              <a href="mailto:michaelpplange@gmail.com">
+                michaepplange@gmail.com
+              </a>
+            </div>
+            <span>
+              <span class="fab fa-linkedin" />
+              <a href="https://www.linkedin.com/in/michaelplange/">
+                /in/michaelplange
+              </a>
+            </span>
+            <div>
+              <i class="fab fa-github" />
+              <a href="https://github.com/michaelplangealo">
+                github.com/michaelplangealo
+              </a>
+            </div>
+          </ContactMe>
         </BasicSideContainer>
       </BasicSide>
     );
