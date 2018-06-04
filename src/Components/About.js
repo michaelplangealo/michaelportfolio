@@ -55,9 +55,10 @@ export default class About extends Component {
               either my Masters or PhD, or applying for Pharamcy School. It was
               then I realized that I probably shouldn't do either of those
               things (the last thing the world needs is a bad therapist or a bad
-              pharamcist) and decided to turn my attention elsewhere. After much
-              trial and tribulation, I found a field which scratched my itch for
-              both the creative and the pragmatic, web development!
+              pharamcist) and decided to turn my attention elsewhere. I felt
+              that the best field for me to work in would be a field in which I
+              could explore creative possibilities while solving a problem,
+              imbued with my own personality.
             </AboutContent>
           </Content>
         </BodyParty>
