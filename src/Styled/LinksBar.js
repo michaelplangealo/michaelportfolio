@@ -7,12 +7,12 @@ const LinkMe = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 70%;
+  width: 65%;
   position: fixed;
   right: 10vh;
   top: 3vh;
   box-sizing: border-box;
-  background: transparent;
+  background: white;
 `;
 
 const LinkContainer = styled.div`
@@ -26,7 +26,7 @@ const LinkContainer = styled.div`
     font-size: 15px;
     text-decoration: none;
     &:hover {
-      color: #274c77;
+      color: tomato;
       transiton: 0.4s;
     }
   }
