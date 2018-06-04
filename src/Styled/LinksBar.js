@@ -27,7 +27,7 @@ const LinkContainer = styled.div`
     text-decoration: none;
     &:hover {
       color: tomato;
-      transiton: 0.4s;
+      transition: 0.4s;
     }
   }
 `;
