@@ -28,7 +28,7 @@ const AboutContent = styled.article`
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
   width: 80%;
   color: grey;
 `;
@@ -41,6 +41,60 @@ const NotCute = styled.div`
   font-weight: 300;
   font-size: 15px;
   color: grey;
+`;
+
+const Interest = styled.section`
+  width: 70%;
+  height: 40%;
+  display: flex;
+`;
+const Topics = styled.div`
+  width: 40%;
+  height: 30%;
+  & p {
+    letter-spacing: 0.2px;
+    text-rendering: optimizeLegibility;
+    line-height: 36px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: grey;
+    text-decoration: underline;
+  }
+`;
+
+const Examples = styled.div`
+  width: 60%;
+  height: 30%;
+`;
+const ExmpLinks = styled.div`
+  width: 40%;
+  height: 100%;
+  & p {
+    letter-spacing: 0.2px;
+    text-rendering: optimizeLegibility;
+    line-height: 36px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: grey;
+    &:hover {
+      color: tomato;
+    }
+    & a {
+      letter-spacing: 0.2px;
+      text-rendering: optimizeLegibility;
+      line-height: 36px;
+      margin-bottom: 0;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: grey;
+      text-decoration: none;
+    }
+  }
 `;
 
 export default class About extends Component {
@@ -73,11 +127,27 @@ export default class About extends Component {
               scratching my itch of being both creative and practical.
             </AboutContent>
             <NotCute>
-              Music and food and some animating, these are a few of my favorite
+              Art and design, and some animating, these are a few of my favorite
               things 🎤🎶<Peekaboo>
                 Sung to the tune of "Favorite Things".
               </Peekaboo>
             </NotCute>
+            <Interest>
+              <Topics>
+                <p>ANIMATION:</p>
+              </Topics>
+              <Examples>
+                <ExmpLinks>
+                  <div>
+                    <p>Three.js</p> <a>https://threejs.org/</a>
+                  </div>
+                  <div>
+                    <p>Blender</p>
+                    <a>https://www.blender.org/</a>
+                  </div>
+                </ExmpLinks>
+              </Examples>
+            </Interest>
           </Content>
         </BodyParty>
       </PageBody>

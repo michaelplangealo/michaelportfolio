@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const PageBody = styled.body`
   display: flex;
-  height: 120vh;
+  height: 200vh;
   background: aliceblue;
 `;
 export const BodyParty = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 180vh;
   display: flex;
   align-items: center;
   justify-content: center;
