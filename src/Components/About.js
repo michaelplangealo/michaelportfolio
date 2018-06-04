@@ -1,7 +1,24 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { AboutSide } from "../Styled/SideBar.js";
-import { BodyParty, PageBody, Content } from "../Styled/Pages.js";
+import { BodyParty } from "../Styled/Pages.js";
+
+export const AboutPage = styled.body`
+  display: flex;
+  height: 200vh;
+  background: aliceblue;
+`;
+export const PageContent = styled.div`
+  height: 110%;
+  width: 90%;
+  margin-top: 20vh;
+  background: white;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+`;
 
 const ContentContent = styled.div`
   height: 90%;
@@ -116,10 +133,10 @@ const Line = styled.hr`
 export default class About extends Component {
   render() {
     return (
-      <PageBody>
+      <AboutPage>
         <AboutSide />
         <BodyParty>
-          <Content>
+          <PageContent>
             <ContentContent>
               <AboutIntro>
                 Hi there. I'm Michael Plange, a Front-End Web Developer based
@@ -210,9 +227,9 @@ export default class About extends Component {
                 </Examples>
               </Interest>
             </ContentContent>
-          </Content>
+          </PageContent>
         </BodyParty>
-      </PageBody>
+      </AboutPage>
     );
   }
 }
