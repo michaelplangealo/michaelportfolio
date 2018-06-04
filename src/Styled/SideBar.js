@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React, { Component } from "react";
 
 const BasicSide = styled.div`
-  width: 25%;
+  width: 25vw;
   height: 100%;
   background: black;
   color: white;
@@ -10,36 +10,85 @@ const BasicSide = styled.div`
   flex-direction: columm;
   align-items: center;
   justify-content: center;
-  padding-left: 40px;
 `;
 const BasicSideContainer = styled.div`
   height: 70%;
   width: 100%;
+  ${"" /* background: salmon; */} padding: 20px 20px 20px 20px;
 `;
 
-//HOME SIDE BAR CONTENT YA DIG
-const HomeHi = styled.h1`
-  font-family: "Archivo", sans-serif;
+// BAR CONTENT YA DIG
+const SideHi = styled.h1`
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 69px;
+`;
+const Hidden = styled.div`
+  color: black;
+  &:hover {
+    color: tomato;
+  }
 `;
 const WhereRU = styled.h2`
-  font-family: "Karla", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-`;
-const IKidYouKnot = styled.img`
-  width: 50%;
-  height: 50%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 `;
 
-export default class HomeSide extends Component {
+export class HomeSide extends Component {
   render() {
     return (
       <BasicSide>
         <BasicSideContainer>
-          <HomeHi>Hi, my name is Michael Plange,</HomeHi>
+          <SideHi>hi, i'm michael plange,</SideHi>
+          <Hidden>yoo-hoo</Hidden>
           <WhereRU>and this is my website.</WhereRU>
+          <Hidden>please enjoy your stay.</Hidden>
+        </BasicSideContainer>
+      </BasicSide>
+    );
+  }
+}
+
+export class AboutSide extends Component {
+  render() {
+    return (
+      <BasicSide>
+        <BasicSideContainer>
+          <SideHi>hi, i'm michael plange.</SideHi>
+          <Hidden>michael plange i am.</Hidden>
+          <WhereRU>i'm 90% hard work & 10% spongebob quotes.</WhereRU>
+          <Hidden>please enjoy your stay.</Hidden>
+        </BasicSideContainer>
+      </BasicSide>
+    );
+  }
+}
+
+export class WriteSide extends Component {
+  render() {
+    return (
+      <BasicSide>
+        <BasicSideContainer>
+          <SideHi>hi, i'm michael plange,</SideHi>
+          <Hidden>mmmhmm</Hidden>
+          <WhereRU>& sometimes i write.</WhereRU>
+          <Hidden>please enjoy your stay.</Hidden>
+        </BasicSideContainer>
+      </BasicSide>
+    );
+  }
+}
+
+export class CodeSide extends Component {
+  render() {
+    return (
+      <BasicSide>
+        <BasicSideContainer>
+          <SideHi>hi, i'm michael plange,</SideHi>
+          <Hidden>mmmhmm</Hidden>
+          <WhereRU> and this is a bit of my work.</WhereRU>
+          <Hidden>please enjoy your stay.</Hidden>
         </BasicSideContainer>
       </BasicSide>
     );

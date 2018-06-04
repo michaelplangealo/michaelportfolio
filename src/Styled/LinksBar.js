@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 const LinkMe = styled.div`
   height: 7vh;
@@ -8,18 +9,26 @@ const LinkMe = styled.div`
   justify-content: flex-end;
   width: 70%;
   position: fixed;
+  right: 10vh;
+  top: 3vh;
   box-sizing: border-box;
+  background: transparent;
 `;
 
 const LinkContainer = styled.div`
   height: 100%;
-  width: 60%;
+  width: 35%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  &p {
+  & a {
     color: grey;
-    font-size: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    &:hover {
+      color: #274c77;
+      transiton: 0.4s;
+    }
   }
 `;
 
@@ -28,10 +37,13 @@ export default class LinkedUp extends Component {
     return (
       <LinkMe>
         <LinkContainer>
-          <p>Home</p>
-          <p>About</p>
-          <p>Write</p>
-          <p>Code</p>
+          <Link to="/">Home</Link>
+
+          <Link to="/About">About</Link>
+
+          <Link to="/Write">Write</Link>
+
+          <Link to="/Code">Code</Link>
         </LinkContainer>
       </LinkMe>
     );

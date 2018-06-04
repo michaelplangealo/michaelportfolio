@@ -1,28 +1,42 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import HomeSide from "../Styled/SideBar.js";
-import LinkedUp from "../Styled/LinksBar";
+import { HomeSide } from "../Styled/SideBar.js";
+import { BodyParty, PageBody, Content } from "../Styled/Pages.js";
+import { CSSTransitionGroup } from "react-transition-group";
+import "./Home.css";
 
-// styled components mang
-const HomeBodyHaHa = styled.body`
-  height: 150vh;
-  width: 100%;
-  display: flex;
-`;
-const HomeContent = styled.div`
-  height: 100%;
-  width: 70%;
+const HomeHi = styled.h1`
+  letter-spacing: 0.2px;
+  text-rendering: optimizeLegibility;
+  line-height: 36px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background: lime;
+  width: 80%;
+  height: 5vh;
 `;
 
 export default class Home extends Component {
   render() {
     return (
-      <HomeBodyHaHa>
-        <HomeSide />
-        <HomeContent>
-          <LinkedUp />
-        </HomeContent>
-      </HomeBodyHaHa>
+      <CSSTransitionGroup
+        transitionName="homeTransition"
+        transitionAppear={true}
+        transitionAppearTimeout={500}
+        transitionEnter={false}
+        transitionLeave={false}
+      >
+        <PageBody>
+          <HomeSide />
+          <BodyParty>
+            <Content>
+              <HomeHi>Hey there. </HomeHi>
+            </Content>
+          </BodyParty>
+        </PageBody>
+      </CSSTransitionGroup>
     );
   }
 }
