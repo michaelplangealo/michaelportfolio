@@ -10,7 +10,7 @@ const LinkMe = styled.div`
   width: 65%;
   position: fixed;
   right: 10vh;
-  top: 3vh;
+  top: 5vh;
   box-sizing: border-box;
   background: white;
 `;
