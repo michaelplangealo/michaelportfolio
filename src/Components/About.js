@@ -15,7 +15,7 @@ const AboutIntro = styled.h1`
   height: 5vh;
   color: darkgrey;
 `;
-const YeeHaw = styled.div`
+const Peekaboo = styled.div`
   color: white;
   &:hover {
     color: tomato;
@@ -32,6 +32,16 @@ const AboutContent = styled.article`
   width: 80%;
   color: grey;
 `;
+const NotCute = styled.div`
+  letter-spacing: 0.5px;
+  text-rendering: optimizeLegibility;
+  line-height: 36px;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: grey;
+`;
 
 export default class About extends Component {
   render() {
@@ -42,7 +52,7 @@ export default class About extends Component {
           <Content>
             <AboutIntro>
               Hi there. I'm Michael Plange, a Front-End Web Developer based out
-              of Dallas, Texas. <YeeHaw>yeehaw!</YeeHaw>
+              of Dallas, Texas. <Peekaboo>yeehaw</Peekaboo>
             </AboutIntro>
             <AboutContent>
               I graduated from the University of Texas at Arlington in 2014 with
@@ -58,8 +68,16 @@ export default class About extends Component {
               pharamcist) and decided to turn my attention elsewhere. I felt
               that the best field for me to work in would be a field in which I
               could explore creative possibilities while solving a problem,
-              imbued with my own personality.
+              imbued with my own personality. After a bit of much needed
+              soul-searching, I found myself in the field of Web Development,
+              scratching my itch of being both creative and practical.
             </AboutContent>
+            <NotCute>
+              Music and food and some animating, these are a few of my favorite
+              things 🎤🎶<Peekaboo>
+                Sung to the tune of "Favorite Things".
+              </Peekaboo>
+            </NotCute>
           </Content>
         </BodyParty>
       </PageBody>

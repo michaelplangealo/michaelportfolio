@@ -31,8 +31,8 @@ const Hidden = styled.div`
 `;
 const WhereRU = styled.h2`
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
 `;
 
 export class HomeSide extends Component {
@@ -57,7 +57,9 @@ export class AboutSide extends Component {
         <BasicSideContainer>
           <SideHi>hi, i'm michael plange.</SideHi>
           <Hidden>michael plange i am.</Hidden>
-          <WhereRU>i'm 90% hard work & 10% spongebob quotes.</WhereRU>
+          <WhereRU>
+            i'm made up of 90% hard work & 10% spongebob quotes.
+          </WhereRU>
           <Hidden>please enjoy your stay.</Hidden>
         </BasicSideContainer>
       </BasicSide>
