@@ -4,12 +4,11 @@ import ContactInfo from "../Styled/Contacts.js";
 
 const BasicSide = styled.div`
   width: 25vw;
-  height: 100%;
+  min-height: 100%;
   background: black;
   color: white;
   display: flex;
   flex-direction: columm;
-  align-items: center;
   justify-content: center;
 `;
 const BasicSideContainer = styled.div`

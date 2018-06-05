@@ -10,7 +10,7 @@ const PastThings = styled.section`
   display: flex;
 `;
 const ProjNames = styled.h1`
-  width: 40vw;
+  width: 40%;
   height: 50%;
   & p {
     letter-spacing: 0.2px;
