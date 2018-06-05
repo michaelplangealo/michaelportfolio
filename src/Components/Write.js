@@ -9,7 +9,7 @@ export default class Write extends Component {
       <PageBody>
         <WriteSide />
         <BodyParty>
-          <Content />
+          <Content>coming soon</Content>
         </BodyParty>
       </PageBody>
     );

@@ -7,7 +7,7 @@ const LinkMe = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 65%;
+  width: 60%;
   position: fixed;
   right: 10vh;
   top: 5vh;

@@ -19,20 +19,27 @@ const BasicSideContainer = styled.div`
   text-align: center;
 `;
 
-// BAR CONTENT YA DIG
+// BAR CONTENT
 const SideHi = styled.h1`
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 69px;
 `;
+const HomeIsDifferent = styled.h1`
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+`;
+
 const Hidden = styled.div`
   color: black;
+  font-family: "Roboto", sans-serif;
   &:hover {
     color: tomato;
   }
 `;
 const WhereRU = styled.h2`
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 `;
@@ -42,9 +49,11 @@ export class HomeSide extends Component {
     return (
       <BasicSide>
         <BasicSideContainer>
-          <SideHi>hi, i'm michael plange,</SideHi>
+          <HomeIsDifferent>
+            hi, i'm michael plange, a front-end web developer in dallas, tx
+          </HomeIsDifferent>
           <Hidden>yoo-hoo</Hidden>
-          <WhereRU>and this is my website.</WhereRU>
+          <WhereRU>& this is my website.</WhereRU>
           <Hidden>please enjoy your stay.</Hidden>
           <ContactInfo />
         </BasicSideContainer>
@@ -58,7 +67,7 @@ export class AboutSide extends Component {
     return (
       <BasicSide>
         <BasicSideContainer>
-          <SideHi>hi, i'm michael plange.</SideHi>
+          <SideHi>i'm michael plange here too.</SideHi>
           <Hidden>michael plange i am.</Hidden>
           <WhereRU>
             i'm made up of 90% hard work & 10% spongebob quotes.
@@ -76,7 +85,7 @@ export class WriteSide extends Component {
     return (
       <BasicSide>
         <BasicSideContainer>
-          <SideHi>hi, i'm michael plange,</SideHi>
+          <SideHi>still michael plange,</SideHi>
           <Hidden>mmmhmm</Hidden>
           <WhereRU>& sometimes i write.</WhereRU>
           <Hidden>please enjoy your stay.</Hidden>
@@ -92,7 +101,7 @@ export class CodeSide extends Component {
     return (
       <BasicSide>
         <BasicSideContainer>
-          <SideHi>hi, i'm michael plange,</SideHi>
+          <SideHi>i am not not michael plange,</SideHi>
           <Hidden>mmmhmm</Hidden>
           <WhereRU> and this is a bit of my work.</WhereRU>
           <Hidden>please enjoy your stay.</Hidden>

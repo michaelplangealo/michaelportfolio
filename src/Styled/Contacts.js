@@ -12,13 +12,13 @@ const ContactMe = styled.div`
   justify-content: space-around;
   p {
     color: white;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
   }
   a {
     color: white;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
     text-decoration: none;
@@ -28,14 +28,14 @@ const ContactMe = styled.div`
     }
   }
   div {
-    width: 78%;
+    width: 73%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   span {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 `;
 
