@@ -30,6 +30,9 @@ const LinkContainer = styled.div`
       transition: 0.4s;
     }
   }
+  &.strikeMe {
+    text-decoration: line-through;
+  }
 `;
 
 export default class LinkedUp extends Component {
@@ -41,7 +44,9 @@ export default class LinkedUp extends Component {
 
           <Link to="/About">About</Link>
 
-          <Link to="/Write">Write</Link>
+          <Link to="/Write" className="strikeMe">
+            Write
+          </Link>
 
           <Link to="/Projects">Projects</Link>
         </LinkContainer>
