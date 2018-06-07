@@ -23,11 +23,13 @@ const SideHi = styled.h1`
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 69px;
+  padding-top: 50px;
 `;
 const HomeIsDifferent = styled.h1`
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 50px;
+  padding-top: 50px;
 `;
 
 const Hidden = styled.div`
