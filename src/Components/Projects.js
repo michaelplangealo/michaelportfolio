@@ -3,13 +3,17 @@ import styled from "styled-components";
 import { CodeSide } from "../Styled/SideBar";
 import { Intro } from "../Components/About.js";
 import { BodyParty, PageBody, Content } from "../Styled/Pages.js";
+import { BetterPage, BetterBody, PageContent } from "./About.js";
 import "./Projects.css";
 import { CSSTransitionGroup } from "react-transition-group";
+import mow from "./mow.png";
+import qode from "./qode.png";
+import portfolio from "./portfolio.png";
 
 const PastThings = styled.section`
-  height: 20%;
   width: 85%;
   display: flex;
+  flex-direction: column;
 `;
 const ProjNames = styled.h1`
   width: 40%;
@@ -21,7 +25,7 @@ const ProjNames = styled.h1`
     margin-bottom: 0;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 20px;
     color: white;
     text-decoration: underline;
   }
@@ -40,8 +44,12 @@ const ProjNames = styled.h1`
       color: tomato;
     }
   }
+  img {
+    height: 500px;
+  }
 `;
 const ProjDescription = styled.div`
+  width: 70%;
   p {
     letter-spacing: 0.2px;
     text-rendering: optimizeLegibility;
@@ -75,14 +83,15 @@ export default class Projects extends Component {
         transitionEnter={false}
         transitionLeave={false}
       >
-        <PageBody>
+        <BetterPage>
           <CodeSide />
-          <BodyParty>
-            <Content>
+          <BetterBody>
+            <PageContent>
               <Intro>These are a few things I've worked on:</Intro>
               <PastThings>
                 <ProjNames>
-                  <a href="manofwar.xyz">MANOFWAR.XYZ</a>
+                  <a href="www.manofwar.xyz">MANOFWAR.XYZ</a>
+                  <img src={mow} />
                 </ProjNames>
                 <ProjDescription>
                   <p>
@@ -107,7 +116,8 @@ export default class Projects extends Component {
               </PastThings>
               <PastThings>
                 <ProjNames>
-                  <a href="www.google.com">QODE.CLUB</a>
+                  <a href="www.qode.club">QODE.CLUB</a>
+                  <img src={qode} />
                 </ProjNames>
                 <ProjDescription>
                   <p>
@@ -133,6 +143,7 @@ export default class Projects extends Component {
               <PastThings>
                 <ProjNames>
                   <a>MICHAELPLANGE.COM</a>
+                  <img src={portfolio} />
                 </ProjNames>
                 <ProjDescription>
                   <p>The website you're looking at right now.</p>
@@ -141,9 +152,9 @@ export default class Projects extends Component {
                   </ul>
                 </ProjDescription>
               </PastThings>
-            </Content>
-          </BodyParty>
-        </PageBody>
+            </PageContent>
+          </BetterBody>
+        </BetterPage>
       </CSSTransitionGroup>
     );
   }

@@ -5,18 +5,19 @@ import { Link } from "react-router-dom";
 const LinkMe = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 60%;
+  justify-content: space-around;
+  width: 22%;
   position: fixed;
   right: 10vh;
   top: 5vh;
   box-sizing: border-box;
   background: white;
+  margin-right: 2px;
 `;
 
 const LinkContainer = styled.div`
   height: 100%;
-  width: 35%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
