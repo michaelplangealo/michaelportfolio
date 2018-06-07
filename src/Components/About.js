@@ -4,11 +4,11 @@ import { AboutSide } from "../Styled/SideBar.js";
 import "./About.css";
 import { CSSTransitionGroup } from "react-transition-group";
 
-export const AboutPage = styled.body`
+export const BetterPage = styled.body`
   display: flex;
 `;
 
-export const AboutBody = styled.div`
+export const BetterBody = styled.div`
   width: 100%;
   height: 100%;
   background: aliceblue;
@@ -36,6 +36,7 @@ export const Intro = styled.h1`
   font-weight: 500;
   font-size: 20px;
   width: 80%;
+  padding-top: 20px;
 `;
 const Peekaboo = styled.div`
   color: white;
@@ -90,9 +91,10 @@ const Examples = styled.div`
   height: 50%;
 `;
 const ExmpLinks = styled.div`
-  width: 50%;
   height: 100%;
+  margin-bottom: 30px;
   p {
+    background: #e8e8e8;
     letter-spacing: 0.2px;
     text-rendering: optimizeLegibility;
     line-height: 36px;
@@ -100,7 +102,7 @@ const ExmpLinks = styled.div`
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 12px;
-    color: grey;
+    color: black;
   }
   a {
     letter-spacing: 0.2px;
@@ -135,9 +137,9 @@ export default class About extends Component {
         transitionEnter={false}
         transitionLeave={false}
       >
-        <AboutPage>
+        <BetterPage>
           <AboutSide />
-          <AboutBody>
+          <BetterBody>
             <PageContent>
               <Intro>
                 Hi there. I'm Michael Plange, a Front-End Web Developer based
@@ -195,40 +197,42 @@ export default class About extends Component {
                 </Topics>
                 <Examples>
                   <ExmpLinks>
+                    <p>The Coding Train</p>
                     <a href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">
-                      The Coding Train - A channel aimed at creative coding, as
-                      well as p5.js
+                      A channel aimed at creative coding, as well as p5.js
                     </a>
                     <Line />
+                    <p>Fun Fun Function</p>
                     <a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/featured">
-                      Fun Fun Function - A lighthearted way to learn all the
-                      heavy hitting parts of code
+                      A lighthearted way to learn the heavy hitting parts of
+                      code
                     </a>
                     <Line />
+                    <p>Blender Guru </p>
                     <a
                       href="
                   https://www.blenderguru.com/"
                     >
-                      Blender Guru - Incredibly informative tutorials and
-                      disucssion using Blender.
+                      Incredibly informative tutorials and disucssion using
+                      Blender.
                     </a>
                     <Line />
+                    <p>How I Built This</p>
                     <a href="https://www.npr.org/podcasts/510313/how-i-built-this">
-                      How I Built This - Informative series discussing the
-                      origins of many companies, and how the people behind the
-                      scenes started.
+                      Informative series discussing the origins of many
+                      companies, and how the people behind the scenes started.
                     </a>
                     <Line />
+                    <p>NPR Tiny Desk Concerts</p>
                     <a href="https://www.npr.org/series/tiny-desk-concerts/">
-                      NPR Tiny Desk Concerts - If you don't like music, not sure
-                      if we can be friends.
+                      If you don't like music, not sure if we can be friends.
                     </a>
                   </ExmpLinks>
                 </Examples>
               </Interest>
             </PageContent>
-          </AboutBody>
-        </AboutPage>
+          </BetterBody>
+        </BetterPage>
       </CSSTransitionGroup>
     );
   }
