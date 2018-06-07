@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 const LinkMe = styled.div`
-  height: 7vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
