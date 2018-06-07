@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { CodeSide } from "../Styled/SideBar";
 import { Intro } from "../Components/About.js";
-import { BodyParty, PageBody, Content } from "../Styled/Pages.js";
 import { BetterPage, BetterBody, PageContent } from "./About.js";
 import "./Projects.css";
 import { CSSTransitionGroup } from "react-transition-group";
@@ -10,6 +9,17 @@ import mow from "./mow.png";
 import qode from "./qode.png";
 import portfolio from "./portfolio.png";
 
+const ProjCont = styled.div`
+  margin: 3%;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 60px;
+  background: white;
+  width: 90%;
+`;
 const PastThings = styled.section`
   width: 85%;
   display: flex;
@@ -86,7 +96,7 @@ export default class Projects extends Component {
         <BetterPage>
           <CodeSide />
           <BetterBody>
-            <PageContent>
+            <ProjCont>
               <Intro>These are a few things I've worked on:</Intro>
               <PastThings>
                 <ProjNames>
@@ -152,7 +162,7 @@ export default class Projects extends Component {
                   </ul>
                 </ProjDescription>
               </PastThings>
-            </PageContent>
+            </ProjCont>
           </BetterBody>
         </BetterPage>
       </CSSTransitionGroup>
